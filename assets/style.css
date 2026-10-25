@@ -125,6 +125,7 @@ svg.i { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-widt
 /* Mises en avant (alternées) */
 .feature { display: grid; grid-template-columns: 1fr 1.25fr; gap: 64px; align-items: center; }
 .feature.rev { grid-template-columns: 1.25fr 1fr; }
+.feature > *, .tools > *, .principles > *, .license > * { min-width: 0; }
 .feature.rev .copy { order: 2; }
 .copy h2 { font-size: clamp(28px, 3.4vw, 38px); }
 .copy > p { color: var(--ink-2); font-size: 17px; }
@@ -227,7 +228,7 @@ footer a:hover { color: var(--ink); }
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
   .tools, .principles, .license { grid-template-columns: 1fr 1fr; }
-  .feature, .feature.rev { grid-template-columns: 1fr; gap: 36px; }
+  .feature, .feature.rev { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .feature.rev .copy { order: 0; }
   .contact { grid-template-columns: 1fr; padding: 40px 28px; gap: 36px; }
 }
@@ -239,7 +240,7 @@ footer a:hover { color: var(--ink); }
   .menu a { padding: 12px 0; border-bottom: 1px solid var(--line); }
   .menu .btn { margin-top: 12px; border-bottom: 0; }
   .menu-toggle { display: block; }
-  .tools, .principles, .license, .fgrid, .res .two { grid-template-columns: 1fr; }
+  .tools, .principles, .license, .fgrid, .res .two { grid-template-columns: minmax(0, 1fr); }
   .res .kpis { grid-template-columns: 1fr 1fr; }
   .hero { padding-top: 56px; }
   form.card { padding: 22px; }
