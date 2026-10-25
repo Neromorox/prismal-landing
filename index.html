@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prismal — Les outils Revit pour la conception de logements</title>
+<meta name="description" content="Prismal est une suite d'outils pour Autodesk Revit dédiée aux logements : cotation, conformité au programme, typologies, surfaces, plans de vente.">
+<meta property="og:title" content="Prismal — Les outils Revit pour la conception de logements">
+<meta property="og:description" content="Automatisez les tâches répétitives de la conception de logements dans Revit : surfaces, typologies, conformité au programme, plans de vente, cotation.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/prismal-logo.png">
+<meta name="theme-color" content="#12337a">
+<link rel="icon" href="assets/img/prismal-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil" aria-label="Prismal, accueil">
+      <img class="logo-light" src="assets/img/prismal-logo.png" alt="Prismal">
+      <img class="logo-dark" src="assets/img/prismal-logo-sombre.png" alt="">
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+      <a href="#outils">Outils</a>
+      <a href="#conformite">Conformité</a>
+      <a href="#typologis">Typologis</a>
+      <a href="#plans-de-vente">Plans de vente</a>
+      <a href="#licence">Licence</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="accueil">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Suite d'outils pour Autodesk Revit</span>
+        <h1>La conception de logements, <em>sans les tâches répétitives.</em></h1>
+        <p class="lead">Prismal automatise dans Revit le calcul des surfaces, l'analyse des typologies, le contrôle du programme, la cotation et la production des plans de vente.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">Demander des informations</a>
+          <a class="btn btn-ghost" href="#outils">Découvrir les outils</a>
+        </div>
+        <p class="hero-note">Pour Revit 2027 · Développé par NEROMOROX</p>
+        <div class="stats">
+          <div><b>6</b><span>outils intégrés au ruban</span></div>
+          <div><b>100&nbsp;%</b><span>basé sur les pièces Revit</span></div>
+          <div><b>PDF &amp; Excel</b><span>exports des résultats</span></div>
+        </div>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Plans de vente — mise en page de la feuille</span></div>
+        <img src="assets/img/plans-de-vente.png" alt="Fenêtre Plans de vente de Prismal : mise en page de la feuille avec vues, nomenclature, axonométrie et plan de repérage" width="1683" height="928">
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINCIPES -->
+  <section id="principes">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Une approche simple</span>
+        <h2>Vos pièces Revit sont la source de données.</h2>
+        <p>Aucune convention imposée : les outils s'adaptent à vos projets, pas l'inverse.</p>
+      </div>
+      <div class="principles">
+        <div class="principle reveal">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Vos paramètres, vos règles</h3>
+          <p>Vous choisissez dans l'interface les paramètres de votre projet. Les exclusions se définissent par règles : « Nom contient Balcon », par exemple.</p>
+        </div>
+        <div class="principle reveal">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></div>
+          <h3>Des configurations réutilisables</h3>
+          <p>Enregistrez vos réglages sous un nom et rappelez-les d'un projet à l'autre. Les résultats d'analyse peuvent aussi être sauvegardés et rouverts.</p>
+        </div>
+        <div class="principle reveal">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Sûr pour votre modèle</h3>
+          <p>Les outils d'analyse sont en lecture seule. Les autres demandent une confirmation et forment une seule opération annulable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTILS -->
+  <section id="outils" class="alt">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">La suite</span>
+        <h2>Six outils, un seul onglet dans Revit.</h2>
+        <p>Chaque outil répond à une tâche précise de la conception de logements.</p>
+      </div>
+      <div class="tools">
+        <a class="tool reveal" href="#conformite">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg></div>
+          <h3>Conformité Programme</h3>
+          <p>Compare le projet au programme : nombre de logements et surfaces par typologie, avec les écarts en m² et en %.</p>
+          <span class="tag">Lecture seule</span><span class="more">En savoir plus →</span>
+        </a>
+        <a class="tool reveal" href="#typologis">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-9-9v9z"/><path d="M15 3.5A9 9 0 0120.5 9H15z"/></svg></div>
+          <h3>Typologis</h3>
+          <p>Analyse la composition du programme réalisé : combien de T1, T2, T3…, leurs surfaces, leurs niveaux, et les erreurs de saisie.</p>
+          <span class="tag">Lecture seule</span><span class="more">En savoir plus →</span>
+        </a>
+        <a class="tool reveal" href="#plans-de-vente">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h5M8 16h8"/></svg></div>
+          <h3>Plans de vente</h3>
+          <p>Crée une feuille complète par appartement : vue cadrée, nomenclatures, repérage, nord, échelle, cartouche et axonométrie 3D.</p>
+          <span class="tag write">Crée vues et feuilles</span><span class="more">En savoir plus →</span>
+        </a>
+        <a class="tool reveal" href="#autres">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M3 12h18M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"/><path d="M3 6v12M21 6v12"/></svg></div>
+          <h3>Cotation Auto</h3>
+          <p>Cote automatiquement les pièces d'un plan : au moins deux cotes perpendiculaires par pièce, attachées aux faces des murs.</p>
+          <span class="tag write">Pose des cotes</span><span class="more">En savoir plus →</span>
+        </a>
+        <a class="tool reveal" href="#autres">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M4 20V4m0 16h16"/><path d="M8 16l4-5 3 3 5-7"/></svg></div>
+          <h3>Surface Logement</h3>
+          <p>Calcule la surface totale des pièces de chaque logement et l'écrit dans un paramètre, prêt pour vos nomenclatures et étiquettes.</p>
+          <span class="tag write">Écrit des paramètres</span><span class="more">En savoir plus →</span>
+        </a>
+        <a class="tool reveal" href="#autres">
+          <div class="ico"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2h2"/></svg></div>
+          <h3>Copier Vue</h3>
+          <p>Duplique une vue existante autant de fois que nécessaire, en une seule opération annulable.</p>
+          <span class="tag write">Crée des vues</span><span class="more">En savoir plus →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFORMITÉ -->
+  <section id="conformite">
+    <div class="wrap feature">
+      <div class="copy reveal">
+        <span class="eyebrow">Conformité Programme</span>
+        <h2>Le projet respecte-t-il le programme&nbsp;?</h2>
+        <p>Comparez en un clic le nombre de logements et les surfaces habitables par typologie aux cibles de l'opération, et mesurez chaque écart.</p>
+        <ul class="checks">
+          <li><span><b>Écarts en m² et en %</b> par typologie, et position de chaque logement dans la fourchette minimum – maximum.</span></li>
+          <li><span><b>Annexes et exclusions</b> par règles : balcons, caves, parkings, gaines… sans toucher à la surface habitable.</span></li>
+          <li><span><b>Anomalies détectées</b> et localisées dans Revit : logement hors fourchette, typologie absente, pièce sans appartement…</span></li>
+          <li><span><b>Exports PDF et Excel</b>, résultats enregistrables et réouvrables plus tard.</span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>Conformité Programme — Résultats</span></div>
+          <div class="res">
+            <div class="kpis">
+              <div class="kpi"><b>56</b><span>Logements</span></div>
+              <div class="kpi"><b>3 412 m²</b><span>Surface habitable</span></div>
+              <div class="kpi"><b>60,9 m²</b><span>Surface moyenne</span></div>
+              <div class="kpi"><b>3</b><span>Anomalies</span></div>
+            </div>
+            <div class="panel">
+              <h4>Programme / projet par typologie</h4>
+              <table class="cmp">
+                <thead><tr><th>Typologie</th><th>Logts</th><th>Moy. prog.</th><th>Moy. projet</th><th>Écart</th></tr></thead>
+                <tbody>
+                  <tr><td>T2</td><td>18</td><td>45,0 m²</td><td>46,2 m²</td><td class="pos">+1,2 m² · +2,7 %</td></tr>
+                  <tr><td>T3</td><td>26</td><td>63,0 m²</td><td>61,4 m²</td><td class="neg">−1,6 m² · −2,5 %</td></tr>
+                  <tr><td>T4</td><td>12</td><td>82,0 m²</td><td>85,1 m²</td><td class="pos">+3,1 m² · +3,8 %</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel">
+              <h4>Anomalies et données à vérifier</h4>
+              <div class="anom">
+                <div>Logement A-204 sous la surface minimale de sa typologie (T3)</div>
+                <div class="w">Pièce « Cellier » sans identifiant d'appartement</div>
+                <div class="w">Typologie T5 du projet absente du programme</div>
+              </div>
+            </div>
+            <div class="exemple">Exemple de résultats — données fictives</div>
+          </div>
+        </div>
+        <p class="shot-caption">L'onglet Résultats de Conformité Programme.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOLOGIS -->
+  <section id="typologis" class="alt">
+    <div class="wrap feature rev">
+      <div class="reveal">
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>Typologis — Résultats</span></div>
+          <div class="res">
+            <div class="kpis">
+              <div class="kpi"><b>56</b><span>Appartements</span></div>
+              <div class="kpi"><b>4</b><span>Typologies</span></div>
+              <div class="kpi"><b>60,9 m²</b><span>Surface moyenne</span></div>
+              <div class="kpi"><b>2</b><span>Anomalies</span></div>
+            </div>
+            <div class="two">
+              <div class="panel">
+                <h4>Répartition des typologies</h4>
+                <div class="donut-box">
+                  <svg viewBox="0 0 128 128" role="img" aria-label="Répartition : T1 12 %, T2 32 %, T3 46 %, T4 10 %">
+                    <g transform="rotate(-90 64 64)" fill="none" stroke-width="20">
+                      <circle cx="64" cy="64" r="48" stroke="#2f3150" stroke-width="20"/>
+                      <circle cx="64" cy="64" r="48" stroke="#38bdf8" stroke-dasharray="36.2 301.6" stroke-dashoffset="0"/>
+                      <circle cx="64" cy="64" r="48" stroke="#7c3aed" stroke-dasharray="96.5 301.6" stroke-dashoffset="-36.2"/>
+                      <circle cx="64" cy="64" r="48" stroke="#a78bfa" stroke-dasharray="138.7 301.6" stroke-dashoffset="-132.7"/>
+                      <circle cx="64" cy="64" r="48" stroke="#19b3a6" stroke-dasharray="30.2 301.6" stroke-dashoffset="-271.4"/>
+                    </g>
+                    <text x="64" y="61" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">56</text>
+                    <text x="64" y="78" text-anchor="middle" fill="#9a9fc0" font-size="10">logements</text>
+                  </svg>
+                  <div class="legend">
+                    <span><i style="background:#38bdf8"></i>T1 · 7</span>
+                    <span><i style="background:#7c3aed"></i>T2 · 18</span>
+                    <span><i style="background:#a78bfa"></i>T3 · 26</span>
+                    <span><i style="background:#19b3a6"></i>T4 · 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <h4>Surface moyenne par typologie</h4>
+                <div class="bars">
+                  <div class="bar"><span>T1</span><div><i style="width:32%"></i></div><span>28 m²</span></div>
+                  <div class="bar"><span>T2</span><div><i style="width:52%"></i></div><span>46 m²</span></div>
+                  <div class="bar"><span>T3</span><div><i style="width:70%"></i></div><span>61 m²</span></div>
+                  <div class="bar"><span>T4</span><div><i style="width:96%"></i></div><span>85 m²</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <h4>Répartition par niveau</h4>
+              <div class="bars">
+                <div class="bar"><span>RDC</span><div><i style="width:78%"></i></div><span>14 logts</span></div>
+                <div class="bar"><span>R+1</span><div><i style="width:100%"></i></div><span>18 logts</span></div>
+                <div class="bar"><span>R+2</span><div><i style="width:78%"></i></div><span>14 logts</span></div>
+                <div class="bar"><span>R+3</span><div><i style="width:56%"></i></div><span>10 logts</span></div>
+              </div>
+            </div>
+            <div class="exemple">Exemple de résultats — données fictives</div>
+          </div>
+        </div>
+        <p class="shot-caption">L'onglet Résultats de Typologis.</p>
+      </div>
+      <div class="copy reveal">
+        <span class="eyebrow">Typologis</span>
+        <h2>Vos T1, T2, T3… d'un seul coup d'œil.</h2>
+        <p>Connaissez la composition réelle du programme dans le modèle, et repérez les erreurs de saisie avant qu'elles n'arrivent aux plans.</p>
+        <ul class="checks">
+          <li><span><b>Répartition interactive</b> des typologies, surface moyenne par typologie, répartition par niveau avec la liste des appartements au survol.</span></li>
+          <li><span><b>Jamais de typologie devinée</b> : des valeurs contradictoires dans un appartement le classent « indéterminée » et le signalent.</span></li>
+          <li><span><b>« Afficher dans Revit »</b> sélectionne les pièces d'une anomalie et zoome dessus.</span></li>
+          <li><span><b>Exports PDF et Excel</b>, résultats enregistrables et réouvrables.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS DE VENTE -->
+  <section id="plans-de-vente">
+    <div class="wrap feature">
+      <div class="copy reveal">
+        <span class="eyebrow">Plans de vente</span>
+        <h2>Une feuille complète pour chaque appartement.</h2>
+        <p>Produisez en quelques minutes les plans de vente de toute une opération, avec une mise en page identique pour chaque logement.</p>
+        <ul class="checks">
+          <li><span><b>Vues recadrées</b> sur le contour réel de l'appartement, y compris en L ou en U.</span></li>
+          <li><span><b>Nomenclatures filtrées</b>, plan de repérage dans le bâtiment, flèche du nord orientée, mire d'échelle et cartouche.</span></li>
+          <li><span><b>Axonométrie 3D</b> facultative, isolée de l'appartement.</span></li>
+          <li><span><b>Mise en page à la souris</b> avec aperçu à l'échelle, magnétisme et alignement du contenu.</span></li>
+          <li><span><b>Compléter ou supprimer</b> : l'outil ne recrée que ce qui manque, et nettoie proprement un essai raté.</span></li>
+        </ul>
+      </div>
+      <div class="stack reveal">
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>Plans de vente</span></div>
+          <img src="assets/img/plans-de-vente.png" alt="Plans de vente : configuration et mise en page de la feuille" loading="lazy" width="1683" height="928">
+        </div>
+        <div class="frame" style="width:min(420px,100%);justify-self:end">
+          <div class="frame-bar"><i></i><i></i><i></i><span>Progression de la création</span></div>
+          <img src="assets/img/progression-plans-de-vente.png" alt="Barre de progression de la création des plans de vente" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTRES OUTILS -->
+  <section id="autres" class="alt">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Au quotidien</span>
+        <h2>Les petits outils qui font gagner des heures.</h2>
+      </div>
+      <div class="tools">
+        <div class="stack reveal">
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Cotation Auto</span></div>
+            <img src="assets/img/cotation-auto.png" alt="Fenêtre Cotation automatique" loading="lazy"></div>
+          <div><h3>Cotation Auto</h3><p style="color:var(--ink-2);margin:0">Deux cotes perpendiculaires par pièce, attachées aux faces des murs, à la distance choisie : le centre de la pièce reste libre et les cotes suivent le modèle.</p></div>
+        </div>
+        <div class="stack reveal">
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Surface Logement</span></div>
+            <img src="assets/img/surface-logement.png" alt="Fenêtre Surface Logement" loading="lazy"></div>
+          <div><h3>Surface Logement</h3><p style="color:var(--ink-2);margin:0">La surface cumulée du logement est écrite, en m² arrondis à 2 décimales, dans chaque pièce, avec règles d'exclusion et conversion d'unités gérée.</p></div>
+        </div>
+        <div class="stack reveal">
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Copier Vue</span></div>
+            <img src="assets/img/copier-vue.png" alt="Fenêtre Copier une vue" loading="lazy"></div>
+          <div><h3>Copier Vue</h3><p style="color:var(--ink-2);margin:0">Choisissez la vue et le nombre de copies : elles sont créées d'un coup, nommées proprement, ou annulées en bloc en cas d'échec.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LICENCE -->
+  <section id="licence">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Licence et compte</span>
+        <h2>Un compte, une licence, les outils dont vous avez besoin.</h2>
+        <p>Chaque outil est une licence : vous n'activez que ce qui sert à votre équipe.</p>
+      </div>
+      <div class="license">
+        <div class="step reveal"><h3>Connexion</h3><p>Depuis Revit, le bouton Connexion ouvre votre compte Prismal : connexion, création de compte, mot de passe oublié.</p></div>
+        <div class="step reveal"><h3>Activation</h3><p>Activez la licence par une clé, ou faites une demande d'activation à l'équipe Prismal.</p></div>
+        <div class="step reveal"><h3>Fonctionne hors ligne</h3><p>La licence est vérifiée hors ligne, avec une période de grâce de 3 jours après l'échéance sans connexion.</p></div>
+        <div class="step reveal"><h3>Gérée à plusieurs</h3><p>Collaborateurs, postes, prolongations et suspensions se gèrent depuis la page d'administration.</p></div>
+      </div>
+      <div class="chips reveal" aria-label="Outils inclus dans une licence">
+        <span class="chip">Cotation Auto</span><span class="chip">Plans de vente</span><span class="chip">Copier Vue</span>
+        <span class="chip">Surface Logement</span><span class="chip">Conformité Programme</span><span class="chip">Typologis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Intéressé par Prismal&nbsp;?</h2>
+          <p>Laissez-nous vos coordonnées et dites-nous ce que vous cherchez à automatiser. Nous vous répondons personnellement.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>Une réponse rapide, sans engagement</li>
+            <li><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>Démonstration sur vos propres projets</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>Vos données ne servent qu'à vous répondre</li>
+          </ul>
+        </div>
+        <form class="card reveal" id="contact-form" novalidate>
+          <div id="form-body">
+            <div class="fgrid">
+              <div class="field"><label class="l" for="f-nom">Nom et prénom</label><input id="f-nom" name="nom" type="text" autocomplete="name" required maxlength="120"></div>
+              <div class="field"><label class="l" for="f-email">Email professionnel</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="200"></div>
+              <div class="field"><label class="l" for="f-societe">Société</label><input id="f-societe" name="societe" type="text" autocomplete="organization" maxlength="160"></div>
+              <div class="field">
+                <label class="l" for="f-role">Rôle</label>
+                <select id="f-role" name="role">
+                  <option value="">Choisir…</option>
+                  <option>Architecte</option>
+                  <option>Chef de projet</option>
+                  <option>BIM manager / coordinateur</option>
+                  <option>Dessinateur / projeteur</option>
+                  <option>Promoteur / maître d'ouvrage</option>
+                  <option>Direction</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="field full"><label class="l" for="f-tel">Téléphone <small>(facultatif)</small></label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" maxlength="40"></div>
+              <div class="field full">
+                <span class="l" style="display:block;font-size:13px;font-weight:600;margin-bottom:8px">Outils qui vous intéressent</span>
+                <div class="pick" role="group" aria-label="Outils qui vous intéressent">
+                  <label><input type="checkbox" name="outils" value="conformite"><span>Conformité Programme</span></label>
+                  <label><input type="checkbox" name="outils" value="typologis"><span>Typologis</span></label>
+                  <label><input type="checkbox" name="outils" value="plansvente"><span>Plans de vente</span></label>
+                  <label><input type="checkbox" name="outils" value="cotation"><span>Cotation Auto</span></label>
+                  <label><input type="checkbox" name="outils" value="surface-logements"><span>Surface Logement</span></label>
+                  <label><input type="checkbox" name="outils" value="copiervue"><span>Copier Vue</span></label>
+                </div>
+              </div>
+              <div class="field full"><label class="l" for="f-msg">Votre message</label><textarea id="f-msg" name="message" maxlength="3000" placeholder="Votre contexte, le nombre de postes, ce que vous souhaitez automatiser…"></textarea></div>
+              <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="site" tabindex="-1" autocomplete="off"></label></div>
+              <div class="field full">
+                <label class="consent"><input type="checkbox" name="consentement" id="f-consent" required>
+                  <span>J'accepte que mes données soient utilisées pour répondre à ma demande. Elles ne sont ni revendues ni utilisées à d'autres fins, et je peux demander leur suppression à tout moment.</span></label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" id="f-submit">Envoyer ma demande</button>
+            <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+          </div>
+          <div class="sent" id="form-sent" hidden>
+            <div class="tick"><svg class="i" viewBox="0 0 24 24" style="width:28px;height:28px"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <h3>Merci, votre demande est bien reçue.</h3>
+            <p style="color:var(--ink-2);margin:0">Nous revenons vers vous très rapidement à l'adresse indiquée.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Prismal · NEROMOROX</span>
+    <span><a href="https://neromorox.github.io/prismal-compte/">Mon compte</a></span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
